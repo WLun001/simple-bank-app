@@ -1,4 +1,4 @@
-package com.company;
+package com.company.registry.domain;
 
 public class CheckingAccount extends Account {
     private static final double SERVICE_CHARGE = 0.05;

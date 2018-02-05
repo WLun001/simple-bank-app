@@ -1,4 +1,4 @@
-package com.company;
+package com.company.registry.domain;
 
 import java.util.UUID;
 

@@ -1,14 +1,17 @@
-package com.company;
+package com.company.registry.ui;
 
-import com.company.IAccountRegistry.AccountType;
+import com.company.registry.domain.Account;
+import com.company.registry.domain.IAccountRegistry;
+import com.company.registry.domain.IAccountRegistry.AccountType;
+import com.company.registry.domain.RegistryAccountList;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import static com.company.IAccountRegistry.AccountType.CHECKING;
-import static com.company.IAccountRegistry.AccountType.SAVING;
+import static com.company.registry.domain.IAccountRegistry.AccountType.CHECKING;
+import static com.company.registry.domain.IAccountRegistry.AccountType.SAVING;
 
-public class Main {
+public class BankApp {
     private static Scanner scanner;
     private static IAccountRegistry accounts;
 

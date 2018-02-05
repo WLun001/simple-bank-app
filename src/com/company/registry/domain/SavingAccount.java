@@ -1,4 +1,4 @@
-package com.company;
+package com.company.registry.domain;
 
 public class SavingAccount extends Account {
     public SavingAccount(String name) {

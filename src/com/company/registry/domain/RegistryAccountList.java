@@ -1,8 +1,8 @@
-package com.company;
+package com.company.registry.domain;
 
 import java.util.ArrayList;
 
-import static com.company.IAccountRegistry.AccountType.SAVING;
+import static com.company.registry.domain.IAccountRegistry.AccountType.SAVING;
 
 public class RegistryAccountList implements IAccountRegistry {
 
