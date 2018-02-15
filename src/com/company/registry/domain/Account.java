@@ -13,7 +13,7 @@ public abstract class Account {
     public Account(String name) {
         this.name = name;
         this.accNo = UUID.randomUUID().toString();
-        this.balance = 0.0;
+        this.balance = 100.0;
     }
 
     public String getAccNo() {

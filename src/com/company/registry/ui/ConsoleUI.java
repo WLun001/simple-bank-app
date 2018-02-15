@@ -90,6 +90,7 @@ public class ConsoleUI implements IUserInterface {
         AccountType accountType = type == 0 ? SAVING : CHECKING;
         controller.createAccount(accountType, name);
         System.out.println("Account added");
+        System.out.print("Initial balance is 100");
     }
 
     private  void searchAccount() {
