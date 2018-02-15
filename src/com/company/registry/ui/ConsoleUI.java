@@ -67,14 +67,19 @@ public class ConsoleUI implements IUserInterface {
         System.out.print("List account by: (0 - All, 1 - Saving , 2 - Checking): ");
         int choice = scanner.nextInt();
 
-        ArrayList<Account> accountList;
-        if (choice != 0) {
-            AccountType type = choice == 1 ? SAVING : CHECKING;
-            accountList = controller.getAccounts(type);
-        } else accountList = controller.getAccounts();
+        if (controller.getNumberofAccounts() > 0) {
+            ArrayList<Account> accountList;
+            if (choice != 0) {
+                AccountType type = choice == 1 ? SAVING : CHECKING;
+                accountList = controller.getAccounts(type);
+            } else accountList = controller.getAccounts();
 
-        for (Account account : accountList) {
-            printAccountDetails(account);
+
+            for (Account account : accountList) {
+                printAccountDetails(account);
+            }
+        } else {
+            System.out.println("No accounts found, please add account to get started");
         }
 
     }
