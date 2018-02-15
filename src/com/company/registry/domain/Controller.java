@@ -22,7 +22,8 @@ public class Controller {
     }
 
     public Account searchAccount(String name){
-        return accountRegistry.searchAccount(name);
+        this.account = accountRegistry.searchAccount(name);
+        return account;
     }
 
     public int getNumberofAccounts(AccountType... accountType){
