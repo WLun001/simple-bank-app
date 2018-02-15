@@ -33,4 +33,7 @@ public class Controller {
         return accountRegistry.getAccounts(accountType);
     }
 
+    public void withdraw(double amount){
+        this.account.withdraw(amount);
+    }
 }
