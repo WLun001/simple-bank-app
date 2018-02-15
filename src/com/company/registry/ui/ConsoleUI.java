@@ -74,7 +74,7 @@ public class ConsoleUI implements IUserInterface {
                 accountList = controller.getAccounts(type);
             } else accountList = controller.getAccounts();
 
-
+            System.out.println(String.format("Found %d account(s)", accountList.size()));
             for (Account account : accountList) {
                 printAccountDetails(account);
             }
